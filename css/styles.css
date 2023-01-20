@@ -1,5 +1,12 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body {
-    margin: auto;
+    padding: 0;
+    margin: 0;
 }
 
 header {
@@ -12,9 +19,16 @@ header {
 
 }
 
+.hero {
+    background-image: url('https://images.pexels.com/photos/793012/pexels-photo-793012.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
 
 h1 {
     list-style: none;
+    color:#fff;
     font-family: 'Playfair display', serif;
     display: inline-flex;
 
@@ -90,10 +104,33 @@ main p {
 }
 
 h2 {
+    color: #fff;
+    font-family: 'poppins', sans-serif;
     padding-left: 200px;
     font-size: 100px;
 }
 
+.titulo_galeria{
+    color: black;
+}
+
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+
+.galeria img{
+    width: 30%;
+    opacity: 0.5;
+    border-radius: 20px;
+
+}
+
+.galeria img:hover{
+    opacity: 1;
+}
 h3,
 h4 {
     color: rgb(255, 0, 174);
@@ -122,16 +159,22 @@ h4 {
     background-color: rgb(73, 9, 133);
 }
 
+.cajas-padre {
+    background-color: blue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
 .caja {
     background-color: bisque;
     color: black;
-    width: 200px;
-    height: 200px;
     border: 30px solid rgb(243, 174, 89);
-    padding: 20px 40px 60px 100px;
     margin-top: 80px;
     margin-left: 300px;
-    display: inline-block;
+
 }
 
 .caja-dos {
@@ -141,7 +184,6 @@ h4 {
     height: 200px;
     border: 30px solid rgb(243, 174, 89);
     padding: 20px 40px 60px 100px;
-    display: inline-block;
     margin-left: 40px;
 }
 
@@ -152,10 +194,9 @@ h4 {
     height: 200px;
     border: 30px solid rgb(243, 174, 89);
     padding: 20px 40px 60px 100px;
-    display: inline-block;
     margin-left: 40px;
 }
 
-footer{
+footer {
     background-color: bisque;
 }
