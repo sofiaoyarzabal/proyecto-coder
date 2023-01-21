@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -10,6 +10,8 @@ body {
 }
 
 header {
+    position: fixed;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     background-color: salmon;
@@ -24,55 +26,59 @@ header {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    min-height: 700px;
+    display: flex;
+    align-items: center;
 }
 
-h1 {
+h1 a {
     list-style: none;
-    color:#fff;
+    color: #fff;
     font-family: 'Playfair display', serif;
-    display: inline-flex;
+    text-decoration: none;
 
 }
 
+h1 a:hover {
+    color: #fff;
+}
 
 nav {
-    padding: 10px;
-    justify-content: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-ul {
+header nav ul {
     list-style: none;
     font-family: 'Poppins', sans-serif;
     display: inline-flex;
     margin-left: 400px;
+    margin-bottom: 0rem;
 
 
 }
 
 
-a {
-    text-decoration-color: pink;
-    color: #fff;
 
-}
 
 .nav-enlace {
 
     color: #fff;
     padding: 10px 30px;
+    text-decoration: none;
+    transition: color .2s ease-in-out;
 
 
 }
 
 .nav-enlace:hover {
-    color: black;
+    color: rgb(17, 77, 50);
 }
 
 main p {
     color: rgb(8, 134, 134);
     text-align: center;
-    padding-left: 700px;
-    width: 500px;
     font-family: 'Poppins', sans-serif;
 
 
@@ -84,74 +90,82 @@ main p {
 
 .fondo-rojo {
     background-color: rgb(249, 181, 181);
-    background-image: url();
-    height: 80vh;
+    padding: 30px 0px;
+
 }
 
 .fondo-blanco {
-    background-image: url(../assets/img/fondo1.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    padding: 30px 0px;
 }
 
 .bajada {
-    color: blueviolet;
+    color: rgb(255, 255, 255);
     font-family: 'poppins', sans-serif;
     text-align: center;
-    width: 500px;
-    padding-left: 220px;
+
+
+}
+
+.info-slide {
+    height: auto;
+    word-wrap: break-word;
+    text-shadow: 2px 2px 12px #000;
+}
+
+.hero .cont-slide {
+    width: 40%;
+    text-align: center;
+
 }
 
 h2 {
     color: #fff;
     font-family: 'poppins', sans-serif;
-    padding-left: 200px;
     font-size: 100px;
 }
 
-.titulo_galeria{
+.titulo_galeria {
     color: black;
 }
 
-.galeria{
+.galeria {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    
+
 }
 
-.galeria img{
+.galeria img {
     width: 30%;
     opacity: 0.5;
     border-radius: 20px;
 
 }
 
-.galeria img:hover{
+.galeria img:hover {
     opacity: 1;
 }
-h3,
-h4 {
+
+h3 {
     color: rgb(255, 0, 174);
     text-align: center;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
-    padding-top: 150px;
+
 
 
 }
 
 .boton {
     font-size: 1, 5em;
+    margin: 0px 20px;
     font-weight: bold;
     border-radius: 15px;
     padding: 10px 20px;
     border: 1px solid rgb(57, 57, 57);
     box-shadow: 2px 2px 5px rgb(47, 47, 47);
-    background-color: blueviolet;
+    background-color: rgb(36, 141, 94);
     color: #fff;
-    margin-left: 220px;
 
 }
 
@@ -198,5 +212,47 @@ h4 {
 }
 
 footer {
-    background-color: bisque;
+    background-color: #5e756d;
+    padding: 30px 0px;
+    color: #fff;
+}
+
+footer ul{
+    padding-inline-start: 0px;
+    list-style-type: none;
+}
+
+footer a{
+    color: #fff;
+}
+.redes-footer h4, 
+.redes-footer h5,
+.redes-footer .iconos-footer{
+    margin-bottom: 10px;
+
+}
+.iconos-footer i {
+    font-size: 30px;
+    margin: 0px 10px;
+}
+
+.contactanos ul li i {
+    font-size: 25px;
+}
+
+.contactanos ul li p {
+    margin-bottom: 0px;
+}
+
+.contactanos ul li {
+    margin-bottom: 10px;
+    gap: 10px;
+}
+
+.img-footer .img-thumbnail{
+    background-color: transparent;
+    max-width: 50%;
+    border: none;
+    padding: 0px;
+    
 }
