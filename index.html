@@ -31,7 +31,7 @@
 
 <body>
 
-    <header>
+    <header class="d-none d-sm-block">
 
         <nav class="container">
             <h1><a href="./index.html">Vivero Club</a></h1>
@@ -43,7 +43,33 @@
                 <li><a href="./pages/contacto.html" class="nav-enlace">Contacto</a></li>
             </ul>
         </nav>
+
+
     </header>
+
+    <nav class="navbar navbar-light d-block d-sm-none">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="#">Vivero Club</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarToggleExternal" aria-controls="navbarToggleExternalContent1"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars text-dark"></i>
+            </button>
+        </div>
+
+
+    </nav>
+    <div class="collapse" id="navbarToggleExternal">
+        <ul class="bg-light shadow-3 py-2 px-3">
+            <li class="btn btn-block m-0 p-2 text-start text-dark"><a href="./index.html">Home</a> </li>
+            <li class="btn btn-block m-0 p-2 text-start text-dark"><a href="./pages/nosotros.html">Nosotros</a></li>
+            <li class="btn btn-block m-0 p-2 text-start text-dark"><a href="./pages/suscripcion.html">Suscripcion</a></li>
+            <li class="btn btn-block m-0 p-2 text-start text-dark"><a href="./pages/galeria.html">Galeria</a></li>
+            <li class="btn btn-block m-0 p-2 text-start text-dark"><a href="./pages/contacto.html">Contacto</a></li>
+        </ul>
+    </div>
+
     <section class="hero">
         <div class="container cont-slide">
             <div class="info-slide">
@@ -67,7 +93,7 @@
 
         <section class="fondo-blanco">
             <div class="container">
-                <h3>¿Como funciona Vivero Club?</h3>
+                <h3 class="subtitulo">¿Como funciona Vivero Club?</h3>
                 <br>
                 <article>
 
@@ -84,7 +110,7 @@
 
         <section class="fondo-rojo">
             <div class="container">
-                <h3>¿Por qué elegirnos?</h3>
+                <h3 class="subtitulo">¿Por qué elegirnos?</h3>
                 <br>
                 <article class="color-rojo">
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit odio dolorem dolorum
@@ -139,7 +165,7 @@
                     </ul>
                 </div>
 
-                <div class="col-lg-3 col-xs-12 img-footer">
+                <div class="col-lg-3 col-xs-12 img-footer d-none d-sm-block">
                     <img class="img-thumbnail" src="./assets/img/plantita.png"></img>
 
                 </div>
