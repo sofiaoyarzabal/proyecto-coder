@@ -146,50 +146,17 @@ h3.subtitulo {
     box-shadow: 2px 2px 5px rgb(47, 47, 47);
     background-color: rgb(36, 141, 94);
     color: #fff;
+    text-decoration: none;
+
 
 }
 
 .boton:hover {
-    background-color: rgb(73, 9, 133);
+    background-color: rgb(236, 123, 123);
+    color: #fff;
+    text-decoration: none;
 }
 
-.cajas-padre {
-    background-color: blue;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
-
-
-.caja {
-    background-color: bisque;
-    color: black;
-    border: 30px solid rgb(243, 174, 89);
-    margin-top: 80px;
-    margin-left: 300px;
-
-}
-
-.caja-dos {
-    background-color: bisque;
-    color: black;
-    width: 200px;
-    height: 200px;
-    border: 30px solid rgb(243, 174, 89);
-    padding: 20px 40px 60px 100px;
-    margin-left: 40px;
-}
-
-.caja-tres {
-    background-color: bisque;
-    color: black;
-    width: 200px;
-    height: 200px;
-    border: 30px solid rgb(243, 174, 89);
-    padding: 20px 40px 60px 100px;
-    margin-left: 40px;
-}
 
 footer {
     background-color: #5e756d;
@@ -372,6 +339,7 @@ nav.navbar {
 
     .boton {
         margin-bottom: 10px;
+        display: block;
     }
 
     footer {
