@@ -1,0 +1,126 @@
+header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: $color-salmon;
+    padding: 20px;
+    border-bottom: 2px solid $color-rojo;
+    box-shadow: $color-rojo 3px;
+    z-index: 100;
+
+}
+
+.hero {
+    background-image: url('https://images.pexels.com/photos/793012/pexels-photo-793012.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 700px;
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    list-style: none;
+    font-family: $font-poppins;
+    display: inline-flex;
+    margin-left: 400px;
+    margin-bottom: 0rem;
+
+
+}
+
+
+.nav-enlace {
+
+    color: #fff;
+    padding: 10px 30px;
+    text-decoration: none;
+    transition: color .2s ease-in-out;
+
+
+}
+
+.nav-enlace:hover {
+    color: $color-verde;
+}
+
+.bajada {
+    color: rgb(255, 255, 255);
+    font-family: $font-poppins;
+    text-align: center;
+
+
+}
+
+.info-slide {
+    height: auto;
+    word-wrap: break-word;
+    text-shadow: 2px 2px 12px #000;
+}
+
+.hero .cont-slide {
+    width: 40%;
+    text-align: center;
+
+    @media (max-width:600px) {
+        width: 90%;
+    }
+
+
+
+
+}
+
+ul.bg-light li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav.navbar {
+    background-color: $color-salmon;
+
+}
+
+.navbar-light a.navbar-brand {
+    color: #fff;
+    font-family: $font-logo;
+}
+
+
+h2 {
+    color: #fff;
+    font-family: $font-poppins;
+    font-size: 100px;
+}
+
+.boton {
+    margin: 0px 20px;
+    font-weight: bold;
+    border-radius: 15px;
+    padding: 10px 20px;
+    border: 1px solid rgb(57, 57, 57);
+    box-shadow: 2px 2px 5px rgb(47, 47, 47);
+    background-color: $color-boton;
+    color: #fff;
+    text-decoration: none;
+    @media (max-width:600px) {
+        margin-bottom: 10px;
+        display: block;
+    }
+
+
+}
+
+.boton:hover {
+    background-color: $color-salmon;
+    color: #fff;
+    text-decoration: none;
+}

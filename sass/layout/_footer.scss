@@ -1,0 +1,66 @@
+footer {
+    background-color: $color-verde;
+    padding: 30px 0px;
+    color: #fff;
+
+    ul {
+        padding-inline-start: 0px;
+        list-style-type: none;
+    }
+
+    a {
+        color: #fff;
+    }
+
+    @media (max-width:600px) {
+        text-align: center
+    }
+
+
+}
+
+
+
+.redes-footer {
+
+    h4,
+    h5,
+    .iconos-footer {
+        margin-bottom: 10px;
+
+    }
+}
+
+.iconos-footer i {
+    font-size: 30px;
+    margin: 0px 10px;
+
+}
+
+
+
+.contactanos ul li {
+    margin-bottom: 10px;
+    gap: 10px;
+
+    i {
+        font-size: 25px;
+
+    }
+
+    p {
+        margin-bottom: 0px;
+    }
+
+    @media (max-width:600px) {
+        justify-content: center;
+    }
+}
+
+.img-footer .img-thumbnail {
+    background-color: transparent;
+    max-width: 50%;
+    border: none;
+    padding: 0px;
+
+}

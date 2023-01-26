@@ -1,0 +1,19 @@
+/*abstracts colores*/
+@import "./abstracts/variables";
+
+/*base*/
+@import "./base/resets";
+
+@import "./base/bases";
+
+/*layout*/
+
+@import "./layout/header";
+@import "./layout/body";
+@import "./layout/footer";
+
+/*components*/
+@import "./components/nosotros";
+@import "./components/suscripcion";
+@import "./components/galeria";
+@import "./components/contacto";
